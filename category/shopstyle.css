@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none; /*하이퍼링크 밑줄 제거*/
+    color: inherit; /* 하이퍼 링크 색상 제거 */
+}
+
 .head{
     margin: 0;
     padding: 0;
@@ -30,7 +35,6 @@
     list-style: none; /*목록 순서 표시 삭제*/
     display: flex; /*항목을 가로로 정렬*/
     margin-top: 0;
-    text-decoration: none; /*하이퍼링크 있을 경우 밑줄 삭제*/
 }
 
 .sign li{
@@ -48,7 +52,6 @@
 
 nav{
     /* border-bottom: 3px solid orange; */
-    text-decoration: none;
 }
 
 .menu{
@@ -60,4 +63,62 @@ nav{
 .menu li{
     margin: 0 15px; /*메뉴 항목 사이 여백*/
     text-align: center; /*텍스트 중앙 정렬*/
+}
+
+.container {
+    padding: 10%;
+    /* flex-wrap: wrap;
+    gap: 1em;
+    flex-basis: 150px;
+    flex-grow: 0; */
+}
+
+h2{
+    text-align: center; /*카테고리 제목 중앙으로*/
+    margin: 20px;
+}
+
+.categories {
+    display: flex; /*카테고리 사진 가로정렬*/
+    justify-content: space-evenly; /*아이템간 간격 동일하게*/
+    margin-bottom: 5%; /*밑의 카테고리와 간격*/
+}
+.category {
+    /* border: 1px solid #ddd; */
+    /* border-radius: 5px; */
+    overflow: hidden;
+    text-align: center;
+    padding: 0%;
+    width: 40%;
+}
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+.category h3 {
+    margin: 10px 0;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(255, 94, 94, 0); /*박스 그림자*/
+    text-align: center;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.product h3 {
+    margin: 10px 0;
+}
+.product p {
+    margin: 10px 0;
+    font-size: 16px;
 }
