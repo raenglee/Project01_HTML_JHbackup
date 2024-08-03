@@ -9,62 +9,73 @@
 </head>
 
 <body>
-    <header class="head">
+    <!--헤더-->
+    <header class="header">
+
+        <!--우측 상단 메뉴-->
         <ul class="sign">
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">찜</a></li>
-            <li><a href="#">장바구니</a></li>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
+            <li id="search_icon"><a href="#">검색</a></li>
+            <li id="mypage_icon"><a href="#">마이페이지</a></li>
+            <li id="hope_icon"><a href="#">찜</a></li>
+            <li id="basket_icon"><a href="#">장바구니</a></li>
+            <li id="signin_icon"><a href="#">로그인</a></li>
+            <li id="signout_icon"><a href="#">로그인</a></li>
         </ul>
-        <h1 class="logo"><a href="#">GREEN SOUNDS</a></h1>
+
+        <!--로고-->
+        <h1 class="logo"><a href="#">SOUNDS</a></h1>
+
+        <!--네비 카테고리 대분류-->
         <nav>
-            <ul class="menu">
-                <li><a href="#">헤드폰</a></li>
-                <li><a href="#">이어폰</a></li>
-                <li><a href="#">사운드바</a></li>
-                <li><a href="#">스피커</a></li>
-                <li><a href="#">고객지원</a></li>
+            <ul class="categories">
+                <li id="headphones_category"><a href="#">헤드폰</a></li>
+                <li id="earphones_category"><a href="#">이어폰</a></li>
+                <li id="soundbar_category"><a href="#">사운드바</a></li>
+                <li id="speaker_category"><a href="#">스피커</a></li>
+                <li id="cs_category"><a href="#">고객지원</a></li>
             </ul>
         </nav>
+
         <div class="backimg"> </div>
+        
+        <!--선택된 카테고리 명-->
+        <div class="selected_category">
+        <h1 id="selected_headphones">HEADPHONES</h1>
+        </div>
+
     </header>
 
-    <!-- <nav>
-        <ul class="menu">
-            <li><a href="#">헤드폰</a></li>
-            <li><a href="#">이어폰</a></li>
-            <li><a href="#">사운드바</a></li>
-            <li><a href="#">스피커</a></li>
-            <li><a href="#">고객지원</a></li>
-        </ul>
-    </nav> -->
-
+    <!--메인 바디-->
     <div class="container">
-        <section id="categories">
-            <ul class="headphoens1">
-                <li><a href="#">전체</a></li>
-                <li><a href="#">유선</a></li>
-                <li><a href="#">무선</a></li>
+
+        <!--카테고리 소분류-->
+        <section id="categories_sub">
+
+            <!--헤드폰 카테고리의 소분류-->
+            <ul class="subcategories_headphones">
+                <li id="all_products"><a href="#">전체</a></li>
+                <li id="cable_products"><a href="#">유선</a></li>
+                <li id="wireless_products"><a href="#">무선</a></li>
             </ul>
 
-            <section id="products_line1">
+            <!--상품 첫 번째 줄-->
+            <section>
                 <div class="products_line1">
                     <div class="product_line1"><a href="#">
-                            <img src="../img/헤드셋 상품사진/커세어 HS80 RGB WIRELESS 게이밍 헤드셋.jpg" alt="카테고리 이미지" width="255"
-                                height="255">
+                            <img src="../img/헤드셋 상품사진/커세어 HS80_흰색.jpg" alt="커세어 HS80" width="255" height="255">
                             <h3>커세어 HS80</h3>
                             <p>188,700원</p>
                         </a>
                     </div>
                     <div class="product_line1"><a href="#">
-                            <img src="../img/헤드셋 상품사진/BOSE 보스 QC 45 SE.webp" alt="카테고리 이미지" width="255" height="255">
+                            <img src="../img/헤드셋 상품사진/BOSE 보스 QC 45_흰색.jpg" alt="보스QC45" width="255" height="255">
                             <h3>BOSE 보스 QC 45</h3>
                             <p>255,500원</p>
                         </a>
                     </div>
                     <div class="product_line1"><a href="#">
-                            <img src="../img/헤드셋 상품사진/소니 WH-1000XM5.jpg" alt="카테고리 이미지" width="255" height="255">
+                            <img src="../img/헤드셋 상품사진/소니 WH-1000XM5_검은색.jpg" alt="소니 WH-1000XM5" width="255"
+                                height="255">
                             <h3>소니 WH-1000XM5</h3>
                             <p>388,810원</p>
                         </a>
@@ -72,7 +83,8 @@
                 </div>
             </section>
 
-            <section id="products_line2">
+            <!--상품 두 번째 줄-->
+            <section>
                 <div class="products_line2">
                     <div class="product_line2"><a href="#">
                             <img src="../img/헤드셋 상품사진/커세어 HS80 RGB WIRELESS 게이밍 헤드셋.jpg" alt="카테고리 이미지" width="255"
@@ -96,6 +108,7 @@
                 </div>
             </section>
 </body>
+
 <footer>
     상호: none | 대표: none
 </footer>
