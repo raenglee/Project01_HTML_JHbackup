@@ -100,7 +100,7 @@ a{
 /*선택된 카테고리_헤드폰*/
 .selected_category{
     margin: auto;
-    padding: 20px;
+    padding-top: 20px;
     background-color: #FDFFC2;
 }
 
@@ -121,7 +121,7 @@ a{
     flex-grow: 0; */
 }
 
-/*소분류_전체, 유선, 무선_전체 속성*/
+/*헤드폰 소분류_전체, 유선, 무선_전체 속성*/
 .subcategories_headphones{
     list-style: none;
     display: flex;
@@ -131,7 +131,7 @@ a{
     background-color: #FDFFC2;
 }
 
-/*소분류_전체, 유선, 무선_글자 속성*/
+/*헤드폰 소분류_전체, 유선, 무선_글자 속성*/
 .subcategories_headphones li{
     font-family: 'GmarketSansMedium';
     margin: 15px 15px; /*글자 박스 간 간격*/
@@ -154,8 +154,7 @@ a{
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #94FFD8;
-    border-radius: 20% 20% 0% 0%;
+   
 }
 
 /*상품 목록 첫 번째줄_*/
@@ -189,8 +188,100 @@ a{
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #94FFD8;
-    border-radius: 0% 0% 20% 20%;
+}
+
+/*상품 목록 두 번째줄*/
+.product_line2 {
+    overflow: hidden;  /*고정 ? */
+    text-align: center;  /*텍스트 중간정렬*/
+    /* border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255); */
+}
+
+/*두 번째 줄 상품 사진 설정*/
+.product_line2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*두 번째 줄 상품 이름, 가격 속성*/
+.product_line2 h3, p {
+    font-family: 'GmarketSansMedium';
+    margin: 1px 0;
+    font-size: 0.7rem;
+    color: #A3D8FF;
+}
+
+/*------------------------------------------------------------------*/
+
+/*이어폰 소분류_전체, 유선, 무선_전체 속성*/
+.subcategories_earphones{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px; /*전체 박스 패딩*/
+    margin-bottom: 50px;
+    background-color: #FDFFC2;
+}
+
+/*이어폰 소분류_전체, 유선, 무선_글자 속성*/
+.subcategories_earphones li{
+    font-family: 'GmarketSansMedium';
+    margin: 15px 15px; /*글자 박스 간 간격*/
+    border: 1px solid #A3D8FF;
+    padding: 5px 50px; /*글자 박스 별 패딩*/
+    border-radius: 50px 50px 50px 50px;
+    font-size: 0.7rem;
+    color: #A3D8FF;
+}
+
+/*선택된 소분류*/
+#all_products{
+    background-color: white;
+}
+
+/*상품 목록 첫 번째줄_전체 속성*/
+.products_line1 {
+    display: flex; /*카테고리 사진 가로정렬*/
+    justify-content: space-evenly; /*상품 간 간격 동일하게*/
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+
+/*상품 목록 첫 번째줄_*/
+.product_line1 {
+    overflow: hidden;  /*고정 ? */
+    text-align: center;  /*텍스트 중간정렬*/
+    /* border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255); */
+}
+
+/*첫 번째 줄 상품 사진 설정*/
+.product_line1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*첫 번째 줄 상품 이름, 가격 속성*/
+.product_line1 h3, p {
+    font-family: 'GmarketSansMedium';
+    margin: 1px 0;
+    font-size: 0.7rem;
+    color: #A3D8FF;
+}
+
+/*상품사진 두 번째줄_전체 속성*/
+.products_line2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*상품 목록 두 번째줄*/
