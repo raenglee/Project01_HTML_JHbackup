@@ -15,6 +15,13 @@
         font-style: normal;
     }
     
+    @font-face {
+        font-family: 'neurimboGothicRegular';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 /*전체 기본설정*/
 *
 {
@@ -29,30 +36,39 @@ a{
     color: inherit; /*하이퍼 링크 색상 제거 */
 }
 
-/*우측상단 검색, 마이페이지, 찜, 장바구니, 로그인_박스 속성*/
-.top_menu{
-    padding-top: 10px;
-    padding-right: 10px;
-    height: 0%; /*높이 가장 높게*/
-    background-color: #FF76CE;
+/* 우측 상단 메뉴 */
+.top_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    color: #000000;
+    background-color: rgb(0, 255, 13);
+    justify-content: space-between; /* 로고와 아이콘 사이에 공간 분배 */
 }
 
-/*로고_박스 및 글자 속성*/
-.logo{
-    display: inline-block;
-    justify-content: left;
-    font-family:'DNFBitBitv2';
-    text-align: center;
-    font-size: 1.5rem;
-    color: #A3D8FF;
+/* 로고 */
+.top_menu .logo {
+    font-family: 'neurimboGothicRegular';
+    margin: 0 auto; /* 좌우 여백을 자동으로 조정하여 중앙 정렬 */
 }
 
-.top_icon{
-    list-style: none; /*목록 순서 표시 삭제*/
-    display: inline-block; /*항목을 가로로 정렬*/
-    justify-content: right; /*좌측 정렬*/
+/* 아이콘들 컨테이너 */
+.top_menu .top_icons {
+    display: flex;
+    align-items: center;
 }
 
+/* 아이콘 */
+.top_menu .top_icon {
+    margin: 0 5px; /* 아이콘 사이의 여백 조정 */
+}
+
+/* 아이콘 중앙 수직 정렬 */
+.top_menu .top_icon svg {
+    vertical-align: middle;
+}
 
 /*우측상단 검색, 마이페이지, 찜, 장바구니, 로그인_글자 속성*/
 .sign li{
@@ -64,11 +80,12 @@ a{
 
 /*헤드폰, 이어폰, 사운드바, 스피커, 고객지원_박스 속성*/
 .categories{
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
     list-style: none;
     display: flex;
     justify-content: center; /*가로로 중앙 정렬*/
-    background-color: #FF76CE;
+    background-color: rgb(0, 255, 13);
 }
 
 /*헤드폰, 이어폰, 사운드바, 스피커, 고객지원_각 글자 속성*/
@@ -77,43 +94,43 @@ a{
     text-align: center; /*텍스트 중앙 정렬*/
     margin: 0 10px; /*각 글자 사이 여백*/
     padding: 5px 20px; /*각 글자 박스 크기*/
-    border-radius: 40% 40% 40% 40%; /*박스 모서리 둥글게*/
-    color: #A3D8FF;
+    color: #000000;
 }
 
 #headphones_category{
-    color: white;
+    color: #ffffff;
 }
 
 /*카테고리 밑 백그라운드 이미지*/
-/* .backimg{
+.backimg{
     width: 100%;
-    height: 20px; /*카테고리와 카테고리분류명 사이의 높이
+    height: 400px; /*카테고리와 카테고리분류명 사이의 높이*/
     background-color: rgb(255, 254, 138);
-    background-image: url(../img/배경사진/black4.gif);
-    background-repeat: no-repeat; 이미지 반복 금지
-    background-size: cover; 이미지 전체 커버
-    /*background-attachment: fixed; 이미지 스크롤 고정(싫으면 빼기)
+    background-image: url(../img/새폴더/headphoes2-2.jpg);
+    background-repeat: no-repeat; /*이미지 반복 금지*/
+    background-size: cover; /*이미지 전체 커버*/
+    /*background-attachment: fixed; 이미지 스크롤 고정(싫으면 빼기)*/
 }
-*/
+
+
 
 /*선택된 카테고리_헤드폰*/
 .selected_category{
-    margin: auto;
+    margin: 0;
     padding: 20px;
-    background-color: #FDFFC2;
+    background-color: #ffffff;
 }
 
 #selected_headphones{
-    font-family: 'GmarketSansMedium';
+     font-family: 'neurimboGothicRegular';
     text-align: center;
     font-size: 2rem;
-    color: #A3D8FF;
+    color: #000000;
 }
 
 /*상품 사진을 담고있는 박스 전체*/
 .container {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255)
     /* padding: 5%; 이거 있으면위에 메뉴랑 서브메뉴 공간이 너무 커짐*/
     /* flex-wrap: wrap;
     gap: 1em;
@@ -128,23 +145,21 @@ a{
     justify-content: center;
     padding: 0px; /*전체 박스 패딩*/
     margin-bottom: 50px;
-    background-color: #FDFFC2;
 }
 
 /*소분류_전체, 유선, 무선_글자 속성*/
 .subcategories_headphones li{
     font-family: 'GmarketSansMedium';
-    margin: 15px 15px; /*글자 박스 간 간격*/
-    border: 1px solid #A3D8FF;
+    border: 0.5px solid #000000;
     padding: 5px 50px; /*글자 박스 별 패딩*/
-    border-radius: 50px 50px 50px 50px;
     font-size: 0.7rem;
-    color: #A3D8FF;
+    color: #000000;
+    background-color: rgb(0, 255, 13);
 }
 
 /*선택된 소분류*/
 #all_products{
-    background-color: white;
+    background-color: #ffffff;
 }
 
 /*상품 목록 첫 번째줄_전체 속성*/
@@ -154,26 +169,21 @@ a{
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-<<<<<<< HEAD
-=======
-    background-color: #94FFD8;
-    border-radius: 20% 20% 0% 0%;
->>>>>>> parent of eb74485 (240805 섹션)
 }
 
 /*상품 목록 첫 번째줄_*/
 .product_line1 {
     overflow: hidden;  /*고정 ? */
     text-align: center;  /*텍스트 중간정렬*/
-    /* border: 1px solid #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255); */
 }
 
 /*첫 번째 줄 상품 사진 설정*/
 .product_line1 img {
     max-width: 100%;
     height: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 
 /*첫 번째 줄 상품 이름, 가격 속성*/
@@ -181,7 +191,7 @@ a{
     font-family: 'GmarketSansMedium';
     margin: 1px 0;
     font-size: 0.7rem;
-    color: #A3D8FF;
+    color: #000000;
 }
 
 /*상품사진 두 번째줄_전체 속성*/
@@ -192,23 +202,21 @@ a{
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #94FFD8;
-    border-radius: 0% 0% 20% 20%;
 }
 
 /*상품 목록 두 번째줄*/
 .product_line2 {
     overflow: hidden;  /*고정 ? */
     text-align: center;  /*텍스트 중간정렬*/
-    /* border: 1px solid #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255); */
 }
 
 /*두 번째 줄 상품 사진 설정*/
 .product_line2 img {
     max-width: 100%;
     height: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 
 /*두 번째 줄 상품 이름, 가격 속성*/
@@ -216,7 +224,7 @@ a{
     font-family: 'GmarketSansMedium';
     margin: 1px 0;
     font-size: 0.7rem;
-    color: #A3D8FF;
+    color: #000000;
 }
 
 /*가장 하단 푸터*/
