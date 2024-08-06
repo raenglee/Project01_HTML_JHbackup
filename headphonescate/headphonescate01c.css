@@ -1,16 +1,6 @@
-@font-face{
-    font-family:'DNFBitBitv2';
-    font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
-
     @font-face {
         font-family: 'GmarketSansMedium';
         src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'NeoDunggeunmoPro-Regular';
-        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
     }
@@ -43,7 +33,7 @@ a{
     list-style: none;
     padding: 10px;
     margin: 0;
-    color: #000000;
+    color: rgb(0, 0, 0);
     background-color: rgb(0, 255, 13);
     justify-content: space-between; /* 로고와 아이콘 사이에 공간 분배 */
 }
@@ -73,6 +63,7 @@ a{
 /*우측상단 검색, 마이페이지, 찜, 장바구니, 로그인_글자 속성*/
 .sign li{
     margin: 0 5px; /*메뉴끼리의 사이 여백*/
+
     /* text-align: center; /*텍스트 중앙 정렬
     font-size: 0.6rem;
     color: rgb(31, 218, 255); */
@@ -80,6 +71,7 @@ a{
 
 /*헤드폰, 이어폰, 사운드바, 스피커, 고객지원_박스 속성*/
 .categories{
+    margin: 0;
     padding: 10px;
     padding-bottom: 20px;
     list-style: none;
@@ -98,14 +90,14 @@ a{
 }
 
 #headphones_category{
-    color: #ffffff;
+    color: rgb(165, 115, 231);
 }
 
 /*카테고리 밑 백그라운드 이미지*/
 .backimg{
     width: 100%;
     height: 400px; /*카테고리와 카테고리분류명 사이의 높이*/
-    background-color: rgb(255, 254, 138);
+    background-color: rgb(0, 0, 0);
     background-image: url(../img/새폴더/headphoes2-2.jpg);
     background-repeat: no-repeat; /*이미지 반복 금지*/
     background-size: cover; /*이미지 전체 커버*/
@@ -125,7 +117,7 @@ a{
      font-family: 'neurimboGothicRegular';
     text-align: center;
     font-size: 2rem;
-    color: #000000;
+    color: rgb(165, 115, 231);
 }
 
 /*상품 사진을 담고있는 박스 전체*/
@@ -151,15 +143,15 @@ a{
 .subcategories_headphones li{
     font-family: 'GmarketSansMedium';
     border: 0.5px solid #000000;
-    padding: 5px 50px; /*글자 박스 별 패딩*/
+    padding: 5px 10%; /*글자 박스 별 패딩*/
     font-size: 0.7rem;
     color: #000000;
-    background-color: rgb(0, 255, 13);
+    background-color: rgba(0, 255, 13);
 }
 
 /*선택된 소분류*/
 #all_products{
-    background-color: #ffffff;
+    background-color: rgb(165, 115, 231);
 }
 
 /*상품 목록 첫 번째줄_전체 속성*/
@@ -194,6 +186,8 @@ a{
     color: #000000;
 }
 
+/*------------------------------------------------*/
+
 /*상품사진 두 번째줄_전체 속성*/
 .products_line2 {
     display: flex;
@@ -227,10 +221,76 @@ a{
     color: #000000;
 }
 
+/*상품사진 두 번째줄_전체 속성*/
+.products_line2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*상품 목록 두 번째줄*/
+.product_line2 {
+    overflow: hidden;  /*고정 ? */
+    text-align: center;  /*텍스트 중간정렬*/
+}
+
+/*두 번째 줄 상품 사진 설정*/
+.product_line2 img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+
+/*두 번째 줄 상품 이름, 가격 속성*/
+.product_line2 h3, p {
+    font-family: 'GmarketSansMedium';
+    margin: 1px 0;
+    font-size: 0.7rem;
+    color: #000000;
+}
+
+/*----------------------------------*/
+
+/*상품사진 세 번째줄_전체 속성*/
+.products_line3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*상품 목록 세 번째줄*/
+.product_line3 {
+    overflow: hidden;  /*고정 ? */
+    text-align: center;  /*텍스트 중간정렬*/
+}
+
+/*세 번째 줄 상품 사진 설정*/
+.product_line3 img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+
+/*세 번째 줄 상품 이름, 가격 속성*/
+.product_line3 h3, p {
+    font-family: 'GmarketSansMedium';
+    margin: 1px 0;
+    font-size: 0.7rem;
+    color: #000000;
+}
+
 /*가장 하단 푸터*/
 footer{
     font-family: 'GmarketSansMedium';
     font-size: 0.5rem;
     color: white;
-    background-color: #A3D8FF;
+    background-color: rgb(0, 255, 13);
 }
